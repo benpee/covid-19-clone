@@ -1,0 +1,56 @@
+body {
+    background-color: #f5f6fa;
+}
+
+.app {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.app__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.app__header > h1 {
+    color: #fc3c3c;
+    font-size: 2rem;
+}
+
+.app__left {
+    flex: 0.9;
+}
+
+.app__right {
+    flex: 0.1;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__cardContent {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.app__stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__graph {
+    flex-grow: 1;
+}
+
+.app__graphTitle {
+    margin: 20px 0;
+}
+
+@media (max-with: 990px) {
+    .app {
+        flex-direction: column;
+    }
+}
